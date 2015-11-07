@@ -1,0 +1,13 @@
+Instructions for running. Notes from http://www.cs.rpi.edu/~moorthy/Courses/os98/Pgms/socket.html. 
+
+Run the client and the server on separate hosts on the Internet, using executable files "server" and "client". 
+
+1. Start the server passing the port number (any number between 2000 and 65535) as an argument. If this port is already in use on that machine, the server will tell you this and exit. Try another number. 
+(ie. server 51717)
+
+2. Should not do anything until a connection is made. 
+
+3. Run the client passing two arguments, the name of the host on which the server is running and the port number on which the server is listening for connections. If running both on a single machine, use localhost as machine name and first arg to client start. 
+(ie. client localhost 51717)
+
+4. The client should prompt you to enter a message. Server will display your message on stdout, send an acknowledgement message to the client and terminate. The client will print the acknowledgement message from the server and then terminate.
